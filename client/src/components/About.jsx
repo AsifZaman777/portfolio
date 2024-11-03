@@ -3,13 +3,18 @@ import { FaBriefcase, FaGraduationCap } from 'react-icons/fa';
 
 const About = () => {
     return (
-        <div className="max-w-4xl mx-auto px-8 py-16 text-neutral-900">
+        <div className="max-w-7xl mx-auto px-8 text-neutral-900">
+            <h1 className="max-w-3xl mb-10 mx-auto bg-gradient-to-br from-green-200 to-green-600 bg-clip-text text-center text-3xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight">
+                About Me
+            </h1>
+
             {/* Summary */}
-            <p className="text-lg mb-8 leading-relaxed">
-                I am a seasoned Full Stack Developer with a proven track record of over 4+ years, focusing on delivering high-quality solutions. 
-                My expertise lies in a comprehensive range of technologies including Python, Django, Flask, FastAPI, JavaScript, TypeScript, React, Next.js, Node.js, Express, GraphQL, AWS, GCP, and many more. 
-                With a deep understanding of these tools and frameworks, I excel in crafting dynamic and scalable full-stack applications that meet the evolving needs of modern businesses. 
-                Let me bring my wealth of experience and technical prowess to your next project.
+            <p className="text-lg mb-0 leading-relaxed text-left">
+                I'm currently working as a <span className='text-green-600 font-bold'>Junior Software Engineer</span> at <span className='text-green-600 font-bold'>LankaBangla Securities PLC</span>.My duty is to develop complex real-time trading software and services using <span className='text-green-600 font-bold'>ASP.Net core</span> with optimized database integration. I have almost two years of experience
+                in full-stack development using <span className='text-green-600 font-bold'>React.JS</span>, <span className='text-green-600 font-bold'>Node.Js</span>, and <span className='text-green-600 font-bold'>Express</span>. I’ve also developed mobile applications for iOS
+                and Android for many startpus, an edtech startup focused on interactive learning. I am a machine learning enthusiast and have worked on various projects using <span className='text-green-600 font-bold'>Python</span> and <span className='text-green-600 font-bold'>Tensorflow</span>. Currently trying grasp
+                more knowledge on <span className='text-green-600 font-bold'>AI</span> and <span className='text-green-600 font-bold'>ML</span> technologies.
+                
             </p>
 
             {/* Work Experience */}
@@ -19,11 +24,11 @@ const About = () => {
                     <FaBriefcase className="text-purple-600 text-2xl" />
                     <div>
                         <h3 className="text-xl font-semibold">Cloud Analogy</h3>
-                        <h4 className="text-lg font-medium">Sr. Full Stack Developer</h4>
+                        <h4 className="text-lg font-medium text-gray-600">Sr. Full Stack Developer</h4>
                         <p className="text-sm text-gray-400">Sep 2023 - Present</p>
                         <ul className="list-disc list-inside text-gray-300 mt-2 space-y-1">
-                            <li>Design and establish user-friendly websites, including optimized checkout page, resulting in a 25% increase in user clicks and 31% in customer purchases.</li>
-                            <li>Provide adequate training to 45+ junior frontend and backend developers in internal functions, including steps on how to make minor updates/changes independently.</li>
+                            <li>Design and establish user-friendly websites, including an optimized checkout page, resulting in a 25% increase in user clicks and 31% in customer purchases.</li>
+                            <li>Provide adequate training to 45+ junior frontend and backend developers on internal functions, including steps for making minor updates/changes independently.</li>
                         </ul>
                     </div>
                 </div>

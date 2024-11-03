@@ -5,8 +5,9 @@ import About from './components/About';
 
 const App = () => {
   return (
-    <div className='space-y-24'>
+    <div>
     <Navbar/>
+    <div className='py-10'></div>
     <Hero/>
     <About/>
     </div>

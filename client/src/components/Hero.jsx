@@ -6,6 +6,7 @@ import asif from '../assets/images/asif.png';
 import cv from '../assets/docs/Asif Zaman.pdf';
 import computer from '../assets/model/desktop.glb';
 
+
 // 3D Model Component
 function Model() {
     const { scene } = useGLTF(computer);
@@ -16,13 +17,13 @@ function Model() {
             position={[1, 0, 0]} 
         />
     );
-}
+}``
 
 const Hero = () => {
     return (
-        <div id="home" className="flex flex-col items-center w-full max-w-7xl mx-auto px-8 py-16 space-y-8">
+        <div id="home" className="flex flex-col items-center w-full max-w-full mx-auto px-8 py-16 space-y-8">
             {/* Text Section */}
-            <div className="w-full text-left space-y-4">
+            <div className="w-full text-left max-w-7xl space-y-4">
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
                     Hello, Myself <span className="text-green-600">
                         <Typewriter
@@ -71,7 +72,7 @@ const Hero = () => {
             </div>
 
             {/* 3D Model Canvas Section */}
-            <div className="w-full h-[50vh] md:h-[600px] bg-transparent">
+            <div className="w-1/2 h-[50vh] md:h-[600px] bg-transparent">
                 <Canvas dpr={[1, 2]} shadows>
                     <ambientLight intensity={0.3} />
                     <directionalLight 
