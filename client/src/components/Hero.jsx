@@ -1,4 +1,3 @@
-import React from 'react';
 import Typewriter from 'typewriter-effect';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF, Environment } from '@react-three/drei';
@@ -33,6 +32,7 @@ const Hero = () => {
                                 loop: true,
                                 delay: 500,
                                 deleteSpeed: Infinity,
+                                cursor: '_',
                             }}
                         />
                     </span>
@@ -45,12 +45,14 @@ const Hero = () => {
                                 strings: [
                                     'Fullstack development',
                                     'Mobile app development',
-                                    'AI & ML development',
+                                    'Three.js development',
+                                    'AI & ML researcher',
                                 ],
                                 autoStart: true,
                                 loop: true,
                                 delay: 75,
                                 deleteSpeed: 50,
+                                cursor: '|',
                             }}
                         />
                     </span>
