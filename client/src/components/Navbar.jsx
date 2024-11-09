@@ -30,7 +30,7 @@ const Navbar = () => {
             key={item}
             to={item.toLowerCase()}
             smooth={true}
-            duration={500}
+            duration={1000}
             offset={-70}
             onClick={() => {
               setActiveLink(item);

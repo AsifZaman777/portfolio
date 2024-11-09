@@ -74,7 +74,7 @@ const Hero = () => {
             </div>
 
             {/* 3D Model Canvas Section */}
-            <div className="w-1/2 h-[50vh] md:h-[600px] bg-transparent">
+            <div className="w-[100vw] h-[50vh] md:h-[600px] bg-transparent">
                 <Canvas dpr={[1, 2]} shadows>
                     <ambientLight intensity={0.3} />
                     <directionalLight 
