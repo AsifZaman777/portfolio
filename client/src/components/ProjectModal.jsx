@@ -81,24 +81,25 @@ const ProjectModal = ({ project, onClose }) => {
       >
         {/* Carousel */}
         <div style={{ width: "100%", maxWidth: "600px", marginBottom: "2rem" }}>
-          <Slider {...settings}>
-            {carouselImages.map((image, index) => (
-              <div key={index}>
-                <img
-                  src={image}
-                  alt={`Carousel image ${index + 1}`}
-                  style={{
-                    width: "100%",
-                    height: "450px",
-                    objectFit: "cover",
-                    borderRadius: "10px",
-                    boxShadow: "0 4px 20px rgba(0, 0, 0, 0.5)",
-                  }}
-                />
-              </div>
-            ))}
-          </Slider>
-        </div>
+  <Slider {...settings}>
+    {carouselImages.map((image, index) => (
+      <div key={index}>
+        <img
+          src={image}
+          alt={`Carousel image ${index + 1}`}
+          style={{
+            width: "100%",
+            height: "450px",
+            objectFit: "cover",
+            borderRadius: "10px",
+            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.5)",
+          }}
+        />
+      </div>
+    ))}
+  </Slider>
+</div>
+
 
         {/* Centered Date */}
         <p

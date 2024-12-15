@@ -4,13 +4,16 @@ import ProjectCard from "./Shared/ProjectCard";
 import ProjectModal from "./ProjectModal"; // Import the ProjectModal component
 
 // Images
-import arcedemy from "../assets/images/arcedemy.png";
+
+//arcedemy web project image
+import arcedemyWeb from "../assets/images/arcWeb/arcedemyWeb.png";
+import arcedemy from "../assets/images/arcWeb/arcedemy.png";
 
 const Projects = () => {
   // Sample project data
   const projects = [
     {
-      image: arcedemy,
+      image: arcedemyWeb,
       carouselImages: [arcedemy, arcedemy, arcedemy, arcedemy, arcedemy, arcedemy, arcedemy], // Fixed spelling mistake here
       name: "Arcedemy",
       shortDesc: "Arcedemy is an online learning platform for the English medium students. The platform offers contents, live tests, and quizzes for the students.",
@@ -64,7 +67,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="relative w-full overflow-hidden py-12 bg-white">
+    <div id="projects" className="relative w-full overflow-hidden py-12 bg-white">
       {/* Section Heading */}
       <h1 className="max-w-3xl mx-auto mb-10 bg-gradient-to-br from-green-400 to-green-600 bg-clip-text text-center text-3xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight">
         Projects
