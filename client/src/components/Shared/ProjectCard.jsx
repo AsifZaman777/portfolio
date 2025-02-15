@@ -50,10 +50,10 @@ const ProjectCard = ({ project }) => {
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="liveLink">
-          <LinkIcon />
+          <LinkIcon color='warning' />
         </IconButton>
         <IconButton aria-label="git">
-          <GitHubIcon />
+          <GitHubIcon color='warning' />
         </IconButton>
       </CardActions>
     
