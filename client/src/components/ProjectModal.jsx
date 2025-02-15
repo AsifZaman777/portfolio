@@ -20,7 +20,8 @@ const ProjectModal = ({ project, onClose }) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
+    autoplay: true,
   };
 
   return (
@@ -32,7 +33,7 @@ const ProjectModal = ({ project, onClose }) => {
       fullScreen
       sx={{
         "& .MuiPaper-root": {
-          background: "rgba(0, 0, 0, 0.8)", // Semi-transparent black
+          background: "rgba(0, 0, 0, 0.7)", // Semi-transparent black
           backdropFilter: "blur(10px)", // Frosted glass effect
           color: "lightGreen", // White text for contrast
           display: "flex",
@@ -53,7 +54,7 @@ const ProjectModal = ({ project, onClose }) => {
           textAlign: "center",
           fontSize: {
             xs: "1.25rem", // Small screens
-            sm: "1.5rem",  // Medium screens
+            sm: "1.5rem", // Medium screens
             md: "1.75rem", // Large screens
           },
         }}
@@ -81,25 +82,24 @@ const ProjectModal = ({ project, onClose }) => {
       >
         {/* Carousel */}
         <div style={{ width: "100%", maxWidth: "600px", marginBottom: "2rem" }}>
-  <Slider {...settings}>
-    {carouselImages.map((image, index) => (
-      <div key={index}>
-        <img
-          src={image}
-          alt={`Carousel image ${index + 1}`}
-          style={{
-            width: "100%",
-            height: "450px",
-            objectFit: "cover",
-            borderRadius: "10px",
-            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.5)",
-          }}
-        />
-      </div>
-    ))}
-  </Slider>
-</div>
-
+          <Slider {...settings}>
+            {carouselImages.map((image, index) => (
+              <div key={index}>
+                <img
+                  src={image}
+                  alt={`Carousel image ${index + 1}`}
+                  style={{
+                    width: "100%",
+                    height: "450px",
+                    objectFit: "cover",
+                    borderRadius: "10px",
+                   
+                  }}
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
 
         {/* Centered Date */}
         <p
@@ -121,7 +121,6 @@ const ProjectModal = ({ project, onClose }) => {
             lineHeight: "1.4",
             width: "100%", // Ensure the description takes full width
             maxWidth: "600px", // Set a max-width for better readability
-            
           }}
           dangerouslySetInnerHTML={{ __html: project.longDesc }}
         />
